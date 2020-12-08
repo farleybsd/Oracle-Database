@@ -1,0 +1,1 @@
+Alter Table TB_Produtos add  CONSTRAINT PK_Tb_Produto PRIMARY KEY(Produto);

@@ -1,0 +1,1 @@
+select to_char(data_nascimento,'MM') from tb_clientes;

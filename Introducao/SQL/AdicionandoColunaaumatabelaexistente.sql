@@ -1,0 +1,1 @@
+alter table tb_clientes add datanascimento date ;
