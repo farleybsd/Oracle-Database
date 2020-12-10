@@ -1,0 +1,4 @@
+1 - Criacao_Esquema
+2 - Carga_Tabelas_Cadastrais
+3 - Carga_Notas
+4 - Carga_Items_Notas
