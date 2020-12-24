@@ -1,0 +1,20 @@
+  
+-- Criando a View
+CREATE OR REPLACE VIEW VW_EMBALAGENS AS
+SELECT
+        EMBALAGEM,
+        SUM(PRECO_DE_LISTA) AS SOMA_PRECO
+    FROM tabela_de_produtos
+    GROUP BY embalagem
+-- Fim da Criacao da View    
+
+-- Filtrando uma VIEW
+    SELECT * FROM VW_EMBALAGENS WHERE SOMA_PRECO <=80;
+-- FIM DO FILTRO
+
+-- JOIN COM VIEW
+SELECT
+    *
+FROM tabela_de_produtos A
+INNER JOIN VW_EMBALAGENS B ON B.EMBALAGEM =A.EMBALAGEM;
+-- FIM JOIN 
